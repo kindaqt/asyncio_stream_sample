@@ -4,7 +4,7 @@ Hi reviewer! I've included the initial prompt as well as a checklist of things I
 
 I wasn't quite sure about the int16 part of the prompt so I implemented functionality that creates a file of random int16s. Since int16 takes 2 bytes I generate files with a size that allows for 2 byte chunks. For example, the random file size might be 1023 in which case I increase the size by one. This way the files stay within the random limit. I didn't know what to do with the data once it hit the receiver so I just bundled it all up and printed it.
 
-If I was to reimplement this I might create a buffer on the sender that receieves random ints. Then I would have 2 functions read from the buffer. One function would stream the data over to the receiver while the other function would save the data to files.
+If I was to reimplement this I might create a buffer on the sender that accepts random ints. Then I would have 2 functions read from the buffer. One function would stream the data over to the receiver while the other function would save the data to files.
 
 ## Get Started
 
